@@ -23,7 +23,6 @@ export default function Formula() {
         payload,
         { headers: { "Access-Control-Allow-Origin": "*" } }
       );
-      console.log(save);
       alert("formula saved successfully");
       setMetricName("");
       setFormula("");
@@ -90,8 +89,6 @@ export default function Formula() {
   console.log(savedFormulas);
   return (
     <div className="w-[1000px] mx-auto px-4">
-      <h1 className="text-2xl mt-2">Formula Builder</h1>
-
       <div className="mt-8 mx-auto">
         <h2>Below are the SaaS metrics that are caluclate by the formula</h2>
         <table className="w-[100%]">
@@ -167,7 +164,7 @@ export default function Formula() {
         <h2 className="text-lg font-semibold mb-4">
           Formulas that can be supported via Formula Builder
         </h2>
-        <img src="../../public/supportedFormulas.png" alt="Flowbite Logo" />
+        <img src="/supportedFormulas.png" alt="Formula" />
       </div>
     </div>
   );

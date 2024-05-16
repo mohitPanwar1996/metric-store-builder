@@ -40,11 +40,9 @@ def round(df, n=0):
 async def evaluate_formula(request: Request):
     try:
         body = await request.json()
-        metric_id = body.get("metric_id")
+        formula = body.get("formula")
+        metric_name = body.get("name")
         df = duckdb_conn.execute("SELECT * FROM deals").fetchdf()
-        # df = pd.DataFrame(expression)
-        formula = formulas.get(metric_id).get("formula")
-        metric_name = formulas.get(metric_id).get("name")
         print(formula)
         eval_expression = pd.eval(f"{metric_name} = {formula}", target=df,)
         new_df = pd.DataFrame(eval_expression)

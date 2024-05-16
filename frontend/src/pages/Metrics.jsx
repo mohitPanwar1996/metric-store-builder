@@ -3,13 +3,11 @@ import axios from "axios";
 
 export default function Metrics() {
   const [metrics, setMetrics] = React.useState([]);
-  const [selectedMetric, setSelectedMetric] = React.useState({});
+  const [metricData, setMeticData] = React.useState([]);
+  const [columns, setColumns] = React.useState([]);
 
   const getSavedFormulas = async () => {
-    const formulas = await axios.get("http://localhost:8000/getFormulas", {
-      headers: { "Access-Control-Allow-Origin": "*" },
-    });
-
+    const formulas = await axios.get("http://localhost:8000/getFormulas");
     const parsedFormulas = JSON.parse(formulas.data.data);
     setMetrics(parsedFormulas);
   };
@@ -24,45 +22,107 @@ export default function Metrics() {
     }
   }, []);
 
-  const getMetricData = async () => {
-    const data = await axios.get();
+  const getMetricData = async (metric) => {
+    try {
+      const data = await axios.post("http://localhost:8000/evaluateFormula", {
+        formula: metric.formula,
+        name: metric.metric_name,
+      });
+      const parseData = JSON.parse(data.data.data);
+      setMeticData(parseData);
+      const columns = Object.keys(parseData[0]);
+      setColumns(columns);
+    } catch (error) {
+      console.log(error);
+    }
   };
-
+  // console.log(metricData);
   return (
     <>
       {metrics?.length > 0 && (
         <>
-          <div className="w-96 ml-2 mt-5 p-6 bg-white shadow-md rounded-md">
-            <h2 className="text-lg font-semibold mb-4">Metrics</h2>
-            <div className="mb-4">
-              <label
-                htmlFor="metricName"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Select Metric
-              </label>
-              <select
-                value={selectedMetric.metric_name}
-                onChange={(e) => setSelectedMetric(e.target.value)}
-                className="w-full h-8 pl-1 border border-black-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
-              >
-                {metrics.map((option) => (
-                  <option key={option.name} value={option}>
-                    {option.metric_name}
-                  </option>
-                ))}
-              </select>
+          <div className="w-[1000px] mx-auto px-4">
+            <h1 className="text-2xl mt-2">Metrics</h1>
+
+            <div className="mt-8 mx-auto">
+              <div className="mt-8 mx-auto">
+                <h2>
+                  Below are the SaaS metrics that are caluclate by the formula
+                </h2>
+                <table className="w-[100%]">
+                  <tr>
+                    <th className="border border-gray-300 text-left px-2">
+                      Name
+                    </th>
+                    <th className="border border-gray-300 text-left px-2">
+                      Formula
+                    </th>
+                    <th className="border border-gray-300 text-left px-2">
+                      Action
+                    </th>
+                  </tr>
+                  {metrics.map((metric, index) => {
+                    return (
+                      <tr key={index}>
+                        <td className="border border-gray-300 text-left px-2">
+                          {metric.metric_name}
+                        </td>
+                        <td className="border border-gray-300 text-left px-2">
+                          {metric.formula}
+                        </td>
+                        <td className="border border-gray-300 text-left px-2">
+                          <button
+                            type="submit"
+                            className="bg-[#1e5385db] text-white py-2 px-4 h-6 rounded-md hover:bg-[#1e5385] flex items-center"
+                            onClick={() => {
+                              getMetricData(metric);
+                            }}
+                          >
+                            Get Data
+                          </button>
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </table>
+              </div>
             </div>
-            <button
-              type="submit"
-              className="bg-[#1e5385db] text-white py-2 px-4 rounded-md hover:bg-[#1e5385]"
-              onClick={() => {
-                getMetricData();
-              }}
-            >
-              Get Data
-            </button>
           </div>
+
+          {metricData?.length > 0 && (
+            <div className="mt-8 px-4">
+              <table className="w-[100%]">
+                <tr>
+                  {columns.map((item, idx) => {
+                    return (
+                      <th
+                        key={idx}
+                        className="border border-gray-300 text-left px-2"
+                      >
+                        {item}
+                      </th>
+                    );
+                  })}
+                </tr>
+                {metricData.map((metric, index) => {
+                  return (
+                    <tr key={index}>
+                      {Object.values(metric).map((item, idx) => {
+                        return (
+                          <td
+                            key={idx}
+                            className="border border-gray-300 text-left px-2"
+                          >
+                            {item}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+              </table>
+            </div>
+          )}
         </>
       )}
     </>

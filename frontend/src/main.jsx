@@ -32,7 +32,7 @@ const router = createBrowserRouter([
         element: <DataExplorer />,
       },
       {
-        path: "statements",
+        path: "problem-statement",
         element: <Statements />,
       },
     ],
