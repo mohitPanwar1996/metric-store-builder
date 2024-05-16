@@ -1,0 +1,6 @@
+fastapi
+pandas
+faker
+openpyxl
+uvicorn[standard]
+duckdb

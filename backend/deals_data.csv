@@ -1,0 +1,101 @@
+account_name,opportunity_start_date,opportunity_end_date,duration,tcv,product,type,region,industry
+"Montoya, Norman and Oliver",2023-09-14,2023-12-26,3,663626.0,Silver,Downgrade,EMEA,Industrials
+Andersen-Holden,2022-07-03,2024-09-11,26,869505.25,Platinum,Renewal,India,Industrials
+Gutierrez-Johnson,2023-02-07,2024-05-13,15,520873.95,Gold,New,NA,Communication Services
+King-Cook,2023-11-27,2025-11-27,24,801900.08,Platinum,New,NA,Industrials
+Collins Inc,2023-06-15,2024-07-19,13,320047.4,Gold,Renewal,NA,Communication Services
+"Lee, Daniel and Case",2022-10-15,2025-06-06,32,128922.28,Silver,Upsell,India,Financials
+Green-Nunez,2023-07-01,2025-01-15,18,650195.71,Gold,New,APAC,Health Care
+Blankenship Ltd,2023-07-27,2025-04-22,21,934918.78,Gold,Downgrade,EMEA,Industrials
+Douglas-Callahan,2024-04-30,2025-01-24,9,707745.21,Platinum,Renewal,NA,Industrials
+Miller-Martin,2023-09-20,2024-02-09,5,293536.14,Gold,Upsell,India,Health Care
+"Dyer, Snyder and Hansen",2022-08-18,2025-08-15,36,50102.4,Gold,Downgrade,NA,Communication Services
+"Jordan, Garcia and Walls",2022-06-28,2024-03-05,21,223386.35,Silver,Renewal,India,Industrials
+Osborn-Deleon,2023-10-11,2024-12-04,14,941894.05,Silver,Upsell,India,Financials
+Smith-Thomas,2022-07-21,2024-07-22,24,981903.65,Gold,New,NA,Communication Services
+"Mora, Gordon and Robbins",2023-11-04,2024-06-05,7,797787.06,Gold,Downgrade,APAC,Communication Services
+King-Green,2024-02-07,2025-08-03,18,608316.37,Silver,Renewal,EMEA,Industrials
+"Wilson, Lowe and White",2022-07-03,2024-04-22,21,547955.67,Silver,Upsell,EMEA,Financials
+Walters-Wall,2023-08-06,2023-11-11,3,768051.85,Platinum,New,EMEA,Communication Services
+Landry and Sons,2024-02-04,2024-08-07,6,725094.72,Platinum,Downgrade,NA,Communication Services
+"Ramirez, Klein and Francis",2024-02-19,2025-06-07,16,263447.5,Silver,New,EMEA,Industrials
+"Collins, Cantrell and Ayers",2022-12-27,2023-01-11,1,274348.24,Silver,Downgrade,NA,Financials
+"Hawkins, Bradford and Peterson",2023-07-23,2023-08-08,1,339692.68,Gold,Renewal,NA,Industrials
+Johnson-Forbes,2024-03-27,2025-05-15,14,580687.79,Gold,Downgrade,India,Communication Services
+Wilson Inc,2023-10-13,2025-01-29,15,974684.46,Gold,Renewal,APAC,Financials
+"Ortega, Hughes and Spencer",2023-12-05,2025-09-10,21,277988.05,Platinum,Renewal,EMEA,Financials
+Adams Ltd,2023-08-21,2025-01-06,17,933523.55,Silver,Upsell,APAC,Financials
+Hernandez Ltd,2022-10-01,2023-07-02,9,966586.11,Gold,Upsell,India,Industrials
+"Foster, Simon and Jackson",2023-06-29,2024-12-17,18,275327.96,Gold,Upsell,APAC,Communication Services
+Kelly-Bradley,2022-06-25,2022-11-24,5,216483.79,Platinum,New,India,Industrials
+Brooks-Jones,2024-04-28,2025-11-08,19,70856.95,Platinum,Downgrade,NA,Financials
+"Hogan, Mclaughlin and Salazar",2022-09-28,2023-08-10,11,692649.86,Gold,Upsell,India,Communication Services
+Simpson LLC,2022-10-13,2024-05-23,19,394233.76,Silver,Downgrade,APAC,Communication Services
+Blankenship and Sons,2023-10-11,2025-11-22,25,229701.42,Gold,Downgrade,NA,Industrials
+Christensen PLC,2023-10-13,2023-11-25,1,731079.31,Silver,Renewal,APAC,Industrials
+Berry-Simpson,2022-08-04,2023-08-10,12,145587.83,Silver,New,India,Industrials
+"Cooper, Baker and Landry",2022-11-25,2024-07-14,20,850860.14,Silver,Renewal,India,Financials
+Knox and Sons,2022-11-14,2024-03-30,16,606361.7,Gold,New,NA,Communication Services
+"Sanders, Scott and Gates",2024-02-27,2024-06-24,4,65317.91,Gold,Downgrade,EMEA,Industrials
+Wong and Sons,2023-03-12,2024-05-02,14,500605.1,Silver,New,NA,Communication Services
+"Castillo, Odom and Spencer",2023-09-14,2026-03-22,30,661727.25,Silver,New,EMEA,Health Care
+Miller-Mclaughlin,2022-09-29,2025-03-24,30,173809.45,Gold,New,APAC,Financials
+Campbell Inc,2023-03-04,2023-08-27,5,580734.19,Silver,New,EMEA,Industrials
+Hendricks-Hill,2023-12-06,2025-06-03,18,681769.5,Gold,New,APAC,Health Care
+Villanueva-Williamson,2022-12-22,2026-04-02,40,622874.71,Platinum,Upsell,India,Financials
+"Curry, Morton and Turner",2023-03-29,2023-04-16,1,691630.8,Platinum,Renewal,APAC,Communication Services
+"Adams, Rodriguez and Harris",2023-06-11,2023-09-23,3,940682.54,Platinum,Downgrade,EMEA,Health Care
+"Barron, Russo and Wade",2023-01-14,2023-06-15,5,4480.57,Gold,New,India,Communication Services
+"Silva, Payne and Jackson",2022-07-31,2024-01-03,18,232606.73,Silver,New,EMEA,Industrials
+Diaz-Bradley,2022-12-17,2024-04-02,16,656854.49,Silver,Renewal,APAC,Health Care
+"Reyes, Cameron and Flynn",2022-07-14,2023-09-15,14,437037.94,Silver,New,India,Industrials
+"Moore, Diaz and Hebert",2022-10-20,2023-11-02,13,537815.52,Silver,New,EMEA,Communication Services
+Kim PLC,2022-08-29,2023-09-01,13,936754.51,Gold,Upsell,India,Health Care
+Webb Inc,2023-05-18,2023-11-17,6,599273.05,Platinum,Renewal,APAC,Industrials
+"Evans, Hansen and Estrada",2022-12-11,2024-06-16,18,636892.85,Silver,New,India,Financials
+Jones LLC,2024-04-08,2026-01-21,21,861107.3,Platinum,New,EMEA,Health Care
+Soto and Sons,2024-04-21,2025-03-17,11,246470.99,Gold,Renewal,APAC,Communication Services
+Michael Ltd,2024-03-16,2024-03-28,0,642457.96,Gold,Upsell,NA,Health Care
+Burton-Lewis,2023-10-07,2024-02-11,4,305701.58,Gold,Upsell,APAC,Industrials
+"Roberts, Johnston and Allison",2023-10-26,2025-10-16,24,20723.24,Platinum,New,India,Health Care
+Howell Inc,2024-01-31,2024-06-29,5,411545.53,Gold,Upsell,NA,Health Care
+"Williams, Morales and Walker",2024-03-20,2024-05-30,2,680449.06,Platinum,Renewal,NA,Communication Services
+Jensen-Gonzalez,2023-01-09,2024-10-08,21,513935.85,Silver,New,NA,Industrials
+Hess Ltd,2022-08-04,2022-12-14,4,610976.46,Silver,New,India,Financials
+Scott PLC,2023-01-06,2025-05-10,28,841783.67,Platinum,Downgrade,NA,Communication Services
+"Oliver, Mclaughlin and Miller",2024-01-23,2025-04-03,15,355660.5,Platinum,Downgrade,APAC,Industrials
+"Mccormick, Mclean and Wright",2024-04-23,2025-07-28,15,980563.27,Gold,New,NA,Financials
+"Williams, Williams and Hudson",2022-05-23,2024-05-04,24,288363.45,Silver,Renewal,NA,Industrials
+Bauer-Sellers,2023-09-09,2023-11-27,2,31564.92,Platinum,Renewal,EMEA,Communication Services
+Houston-Meyer,2024-05-11,2024-08-22,3,21105.51,Silver,Upsell,EMEA,Health Care
+Mcgee-Delacruz,2023-10-03,2025-04-22,18,338892.42,Platinum,Upsell,NA,Industrials
+Schroeder-Robertson,2023-09-27,2025-09-30,24,298090.3,Gold,Upsell,NA,Communication Services
+"Gomez, Lindsey and Gutierrez",2023-10-13,2025-01-15,15,396085.5,Gold,Downgrade,APAC,Industrials
+"Brown, Wilson and Jenkins",2022-12-24,2025-11-27,35,468521.37,Silver,Downgrade,EMEA,Financials
+Peters Ltd,2023-03-31,2023-08-18,5,92844.07,Platinum,Downgrade,NA,Communication Services
+"Ramirez, Evans and Savage",2022-10-28,2025-09-24,35,298416.41,Platinum,Renewal,NA,Financials
+Norman-Brown,2022-06-13,2025-08-14,38,167329.41,Gold,Downgrade,India,Financials
+"Williams, Moore and Bates",2023-04-19,2026-01-13,33,217608.24,Gold,Renewal,APAC,Financials
+Evans PLC,2023-12-19,2025-04-03,16,658146.14,Gold,Downgrade,EMEA,Communication Services
+Johnson and Sons,2023-10-23,2025-12-23,26,82945.64,Platinum,New,EMEA,Health Care
+Lowery Group,2023-03-11,2023-12-18,9,143635.56,Platinum,Downgrade,APAC,Communication Services
+Oconnor-Cole,2023-01-15,2025-10-03,33,886267.97,Silver,Downgrade,NA,Industrials
+Little LLC,2023-01-11,2026-01-22,36,565825.64,Gold,Downgrade,APAC,Health Care
+Roach-Reynolds,2023-07-04,2024-11-09,16,225427.53,Gold,Renewal,India,Industrials
+Hatfield-Taylor,2022-10-16,2025-05-28,31,913689.94,Gold,Renewal,EMEA,Industrials
+Sanchez and Sons,2022-07-25,2026-04-12,45,996282.13,Gold,Renewal,EMEA,Health Care
+Gallegos Ltd,2022-09-06,2026-01-16,40,78182.72,Gold,Renewal,APAC,Financials
+Gonzalez-Collins,2022-06-04,2025-10-26,40,380774.12,Silver,New,EMEA,Financials
+Saunders-Garcia,2023-06-13,2024-11-18,17,270546.23,Platinum,Renewal,India,Communication Services
+Hall-Allen,2022-10-25,2024-02-22,16,979775.48,Silver,Upsell,NA,Industrials
+Weaver-Wolf,2022-11-16,2024-09-12,22,533052.79,Gold,New,NA,Health Care
+Davis-Ferguson,2023-04-14,2025-10-28,30,650116.29,Silver,New,APAC,Health Care
+"Huang, Adams and Morgan",2023-03-08,2025-04-27,25,25617.9,Gold,Upsell,APAC,Communication Services
+Winters-Moss,2022-11-12,2024-05-14,18,340463.47,Platinum,Renewal,NA,Communication Services
+"Parker, Rojas and Kennedy",2022-06-29,2025-06-13,36,694001.47,Silver,Downgrade,India,Industrials
+Kelly-Johnson,2023-02-14,2025-03-18,25,714946.63,Platinum,Upsell,APAC,Financials
+"Armstrong, Singh and Marshall",2022-08-22,2023-08-24,12,803312.39,Silver,Renewal,India,Communication Services
+Patel-Salas,2023-03-07,2024-05-28,14,788023.27,Platinum,Renewal,NA,Industrials
+Ross-Jones,2022-12-22,2025-01-02,25,48527.51,Silver,Upsell,NA,Health Care
+Johnson-Pierce,2022-12-26,2025-10-16,34,892431.52,Platinum,Renewal,APAC,Financials
+"Oneill, Mendez and Strickland",2023-10-22,2025-11-25,25,364356.23,Gold,Upsell,India,Financials
