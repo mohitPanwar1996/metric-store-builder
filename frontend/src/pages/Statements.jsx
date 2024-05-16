@@ -2,53 +2,59 @@ import React from "react";
 
 export default function Statements() {
   return (
-    <>
-      <div className="mx-10 ml-4 mr-4 mt-4 mx-auto bg-white p-6 rounded-md shadow-md">
+    <div className="max-w-7xl mx-auto">
+      <div className="ml-4 mr-4 mt-4  bg-white p-6 rounded-md shadow-md">
         <h2 className="text-xl font-bold mb-4">
-          Problem Statements regarding formula builder
+          Problem Statement: Formula Builder Implementation for Metric
+          Calculation
         </h2>
+        <p>
+          Consider a scenario where a metric formula, such as{" "}
+          <b>
+            OFFSET((S&M Expense - Customer Marketing Expense), -1) / New
+            Customers
+          </b>
+          , relies on data from three distinct datasets, each treated as
+          separate dataframes with their own time columns. The challenge is to
+          compute this formula efficiently across the combined dataframes once
+          they are joined. Research has highlighted tools like Apache Flink,
+          which leverages rules for applying formulas to data and conducting
+          evaluations. We seek to understand how Apache Flink can address this
+          problem and explore alternative tools with similar capabilities.{" "}
+        </p>
+        <br />
+        <p className="text-wrap">
+          <b>Key questions to address include:</b>
+          <br />
+        </p>
         <ul className="list-disc pl-5">
-          <li className="text-wrap mb-2">
-            suppose there is a metric formula like{" "}
-            <strong>
-              OFFSET((S&M Expense - Customer Marketing Expense), -1) / New
-              Customers
-            </strong>{" "}
-            so than each one of the metric will be coming from 3 different
-            datasets let say they will act as three different dataframes with
-            there own time columns than how we will compute the expression on
-            top of the data even if we are able to join the three dataframes and
-            able to make them one dataframe how will the expression execute
+          <li>
+            How should the formula expression be parsed correctly? <br />
           </li>
-          <li className="mb-2 text-wrap">
-            We did research on our end and found out that tools like Apache
-            Flinch where we can use rules to feed formula on top of data and
-            evaluate. We want to understand how Apache Flinch can help and what
-            are the other tools out there that can help us with this problem.
+          <li>
+            When computing metrics from the formula builder, each metric aligns
+            with its own table and time dimension. How can these be merged and
+            calculated effectively? <br />
           </li>
-          <li className="mb-2">
-            What will be the proper way to parse the expression?
+          <li>
+            What methods ensure optimal runtime performance for metric
+            computation? <br />
           </li>
-          <li className="mb-2">
-            While calculating the metric from the formula builder each metric
-            will have its own table and time dimension. How to merge and and
-            compute the metric in this scenario?
+          <li>
+            If runtime computation isn&apos;t feasible, what alternative
+            approaches or tools are recommended? <br />
           </li>
-          <li className="mb-2">
-            How should a metric be calculated at the run time also with better
-            performance?
+          <li>
+            What technologies excel in building robust formula builders? <br />
           </li>
-          <li className="mb-2">
-            If the metric is not calculated at run time than what will be the
-            best way to calcuate it what are the tools out there that can help
-            us with that?
+          <li>
+            Can the pandas library in Python be leveraged to compute these
+            metrics effectively? <br />
           </li>
-          <li className="mb-2">
-            What is the best technology out there to build the formula builder?
-          </li>
-          <li className="mb-2">
-            We are trying to use the pandas library of Python to calculate the
-            metric. How can we use the pandas library to calculate the metric?
+          <li>
+            The aim is to develop a clear strategy for processing complex metric
+            formulas against multi-source datasets efficiently, leveraging
+            appropriate technologies and methodologies. <br />
           </li>
         </ul>
       </div>
@@ -70,6 +76,6 @@ export default function Statements() {
           alt="Formula"
         />
       </div>
-    </>
+    </div>
   );
 }

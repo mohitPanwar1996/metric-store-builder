@@ -41,7 +41,7 @@ export default function Metrics() {
     <>
       {metrics?.length > 0 && (
         <>
-          <div className="w-[1000px] mx-auto px-4">
+          <div className="max-w-7xl mx-auto ">
             <h1 className="text-2xl mt-2">Metrics</h1>
 
             <div className="mt-8 mx-auto">
@@ -87,42 +87,43 @@ export default function Metrics() {
                 </table>
               </div>
             </div>
-          </div>
 
-          {metricData?.length > 0 && (
-            <div className="mt-8 px-4">
-              <table className="w-[100%]">
-                <tr>
-                  {columns.map((item, idx) => {
+            {metricData?.length > 0 && (
+              <div className="mt-8">
+                <h1 className="text-xl mb-2">Metric Data</h1>
+                <table className="w-[100%]">
+                  <tr>
+                    {columns.map((item, idx) => {
+                      return (
+                        <th
+                          key={idx}
+                          className="border border-gray-300 text-left px-2"
+                        >
+                          {item}
+                        </th>
+                      );
+                    })}
+                  </tr>
+                  {metricData.map((metric, index) => {
                     return (
-                      <th
-                        key={idx}
-                        className="border border-gray-300 text-left px-2"
-                      >
-                        {item}
-                      </th>
+                      <tr key={index}>
+                        {Object.values(metric).map((item, idx) => {
+                          return (
+                            <td
+                              key={idx}
+                              className="border border-gray-300 text-left px-2"
+                            >
+                              {item}
+                            </td>
+                          );
+                        })}
+                      </tr>
                     );
                   })}
-                </tr>
-                {metricData.map((metric, index) => {
-                  return (
-                    <tr key={index}>
-                      {Object.values(metric).map((item, idx) => {
-                        return (
-                          <td
-                            key={idx}
-                            className="border border-gray-300 text-left px-2"
-                          >
-                            {item}
-                          </td>
-                        );
-                      })}
-                    </tr>
-                  );
-                })}
-              </table>
-            </div>
-          )}
+                </table>
+              </div>
+            )}
+          </div>
         </>
       )}
     </>
