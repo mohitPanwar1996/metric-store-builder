@@ -1,6 +1,6 @@
 ## Setup guide:
 
-Make sure you are in correct folder - `cd python-formulas`
+Make sure you are in correct folder - `cd backend`
 
 Create virtual environment - `python3 -m venv .venv`
 
