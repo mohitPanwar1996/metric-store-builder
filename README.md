@@ -18,6 +18,8 @@ We did our research and arrive at 2 approaches that looks promising.
 
 <img width="662" alt="image" src="https://github.com/mohitPanwar1996/metric-store-builder/assets/154788387/5b37d360-6de4-4210-bb9a-949d67373a78">
 
+
+
 We are seeking advice, solutions, or recommendations from developers, data folks, and consultants on how to effectively implement and
 scale formula metrics in our system. We are open to use any other approach other than mentioned above. Specifically, 
 we are interested in best practices, tools, or strategies that could help overcome the blockers we are experiencing in handling these advanced use cases.
