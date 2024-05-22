@@ -3,8 +3,13 @@ This repo contanins an overview of our metric store and the problem statement th
 We have simple and formula metrics the simple metrics are just aggeragtions over the measures for that we are using CUBE.dev.
 Formula metric will use other metrics, a user will feed formula in the metric builder component and we will parse and evaluate that
 formula to generate results. We are struck on the formula metric in order to find out how to generate result.
-We did our research and found 2 approaches that looks promising.
+A sample example of fomula metric is:
+in order to calculate metric CAC(Customer acquistion cost) a user will enter following formula:
 
+OFFSET((S&M Expense - Customer Marketing Expense), -1) / New Customers
+
+
+We did our research and arrive at 2 approaches that looks promising.
 1. Compose SQL and apply database UDFs
 2. Compose Dataframes and apply pandas/spark UDFs
 
